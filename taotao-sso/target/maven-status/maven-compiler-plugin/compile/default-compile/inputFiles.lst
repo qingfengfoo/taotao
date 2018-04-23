@@ -1,0 +1,10 @@
+D:\doc\taotao\workspace\taotao-sso\src\main\java\com\taotao\sso\controller\LoginContgroller.java
+D:\doc\taotao\workspace\taotao-sso\src\main\java\com\taotao\sso\component\JedisClient.java
+D:\doc\taotao\workspace\taotao-sso\src\main\java\com\taotao\sso\controller\RegisterController.java
+D:\doc\taotao\workspace\taotao-sso\src\main\java\com\taotao\sso\component\impl\JedisClientSingle.java
+D:\doc\taotao\workspace\taotao-sso\src\main\java\com\taotao\sso\service\RegisterService.java
+D:\doc\taotao\workspace\taotao-sso\src\main\java\com\taotao\sso\component\impl\JedisClientCluster.java
+D:\doc\taotao\workspace\taotao-sso\src\main\java\com\taotao\sso\service\LoginService.java
+D:\doc\taotao\workspace\taotao-sso\src\main\java\com\taotao\sso\service\impl\LoginServiceImpl.java
+D:\doc\taotao\workspace\taotao-sso\src\main\java\com\taotao\sso\service\impl\RegisterServiceImpl.java
+D:\doc\taotao\workspace\taotao-sso\src\main\java\com\taotao\sso\controller\PageController.java

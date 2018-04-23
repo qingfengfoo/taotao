@@ -1,0 +1,9 @@
+package com.taotao.sso.controller;
+/**
+ * 用户注册接口
+ * @author Administrator
+ *
+ */
+public class RegisterController {
+
+}

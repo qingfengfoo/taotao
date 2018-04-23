@@ -1,0 +1,16 @@
+package com.taotao.portal.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.taotao.portal.service.CartService;
+
+/**
+ * 
+ * @author Administrator
+ *
+ */
+public class OrderController {
+
+	@Autowired
+	private CartService cartService;
+}

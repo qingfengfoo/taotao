@@ -1,0 +1,23 @@
+package com.taotao.portal.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.utils.JsonUtils;
+import com.taotao.portal.pojo.OrderInfo;
+import com.taotao.portal.service.OrderService;
+/**
+ * 订单处理Service
+ * @author Administrator
+ *
+ */
+@Service
+public class OrderServiceImpl implements OrderService {
+
+	@Override
+	public String createOrder(OrderInfo orderInfo) {
+		//把orderinfo转换成json
+		JsonUtils.objectToJson(orderInfo);
+		return null;
+	}
+
+}

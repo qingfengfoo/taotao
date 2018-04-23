@@ -1,0 +1,17 @@
+package com.taotao.freemarker;
+
+import java.io.File;
+
+import freemarker.template.Configuration;
+
+public class FreeMarkerTest {
+
+	public void testFreeMarker()throws Exception {
+		//创建一个Configuration对象
+		Configuration configuration=new Configuration(Configuration.getVersion());
+		//告诉config对象模板文件存放的路径
+		configuration.setDirectoryForTemplateLoading(new File("D:\\doc\\taotao\\workspace\\taotao-portal\\src\\main\\webapp\\WEB-INF\\ftl"));
+		//设置config的默认字符集。一般是utf-8
+		configuration.setDefaultEncoding("utf-8");
+	}
+}

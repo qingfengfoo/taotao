@@ -1,0 +1,22 @@
+package com.taotao.sso.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.taotao.sso.service.RegisterService;
+
+/**
+ * 用户注册接口
+ * @author Administrator
+ *
+ */
+@Controller
+@RequestMapping("/user")
+public class RegisterController {
+
+	@Autowired
+	private RegisterService registerService;
+	
+	@RequestMapping("/check/{param}/{type}")
+}

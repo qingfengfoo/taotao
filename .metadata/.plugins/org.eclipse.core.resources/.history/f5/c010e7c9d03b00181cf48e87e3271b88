@@ -1,0 +1,95 @@
+package com.taotao.portal.service.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.common.utils.CookieUtils;
+import com.taotao.common.utils.JsonUtils;
+import com.taotao.pojo.TbItem;
+import com.taotao.portal.pojo.CartItem;
+import com.taotao.portal.service.CartService;
+import com.taotao.portal.service.ItemService;
+/**
+ * 购物车实现
+ * @author Administrator
+ *
+ */
+@Service
+public class CartServiceImpl implements CartService {
+
+	@Autowired
+	private ItemService itemService;
+	@Value("${COOKIE_EXPIRE}")
+	private Integer COOKIE_EXPIRE;
+	
+	@Override
+	public TaotaoResult addCart(Long itemId, Integer num,
+			HttpServletRequest request, HttpServletResponse response) {
+		List<CartItem> itemList = getCartItemList(request);
+		boolean haveflg=false;
+		for (CartItem cartItem : itemList) {
+			//如果商品存在 数量相加
+			if(cartItem.getId()==itemId){
+				cartItem.setNum(cartItem.getNum()+num);
+				haveflg=true;
+				break;
+			}
+		}
+		
+		//如果不存在，调用rest服务，更具商品id获得商品数据
+		if(!haveflg){
+			TbItem item = itemService.getItemById(itemId);
+			//转换成cartItem
+			CartItem cartItem=new CartItem();
+			cartItem.setId(itemId);
+			cartItem.setNum(num);
+			cartItem.setPrice(item.getPrice());
+			cartItem.setTitle(item.getTitle());
+			
+			if(StringUtils.isNoneBlank(item.getImage())){
+				String image=item.getImage();
+				String [] strings=image.split(",");
+				cartItem.setImage(strings[0]);
+			}
+			//添加到购物车商品列表
+			itemList.add(cartItem);
+		}
+		//把购物车商品写入cookie
+		CookieUtils.setCookie(request, response, "TT_CART", JsonUtils.objectToJson(itemList),COOKIE_EXPIRE, true);
+		//返回TaotaoResult
+		return TaotaoResult.ok();
+	}
+
+	/**
+	 * 取购物车商品列表
+	 * @param request
+	 * @return
+	 */
+	private List<CartItem> getCartItemList(HttpServletRequest request){
+		try {
+			//从cookie中取商品列表
+			String json = CookieUtils.getCookieValue(request, "TT_CART",true);
+			List<CartItem> list = JsonUtils.jsonToList(json, CartItem.class);
+			
+			return list==null?new ArrayList<CartItem>():list;
+			
+		} catch (Exception e) {
+			return new ArrayList<CartItem>();
+		}
+	}
+
+	@Override
+	public List<CartItem> getCartItemList(HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

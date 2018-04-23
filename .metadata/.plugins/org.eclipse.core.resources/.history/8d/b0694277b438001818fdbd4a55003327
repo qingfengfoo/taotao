@@ -1,0 +1,18 @@
+package com.taotao.rest.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.taotao.rest.service.ItemService;
+
+/**
+ * 商品管理Controller
+ * @author Administrator
+ *
+ */
+@Controller
+public class ItemController {
+
+	@Autowired
+	private ItemService itemService;
+}

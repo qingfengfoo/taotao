@@ -1,0 +1,13 @@
+package com.taotao.sso.controller;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * 注册和登录页面
+ * @author Administrator
+ *
+ */
+@Controller
+public class PageController {
+
+}

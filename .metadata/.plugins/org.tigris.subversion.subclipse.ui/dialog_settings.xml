@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="500" key="CommitDialog.weights.0"/>
+	<item value="497" key="ChooseUrlDialog.size.x"/>
+	<item value="500" key="CommitDialog.weights.1"/>
+	<item value="377" key="ChooseUrlDialog.size.y"/>
+	<item value="83" key="CommitDialog.location.y"/>
+	<item value="3" key="CommitDialog.location.x"/>
+	<item value="https://gjpt89km4luv4e6:8443/svn/javaee18" key="RepositorySelectionPage.lastRepository"/>
+	<item value="348" key="ChooseUrlDialog.location.x"/>
+	<item value="trunk" key="DirectorySelectionPage.lastParent_https://gjpt89km4luv4e6:8443/svn/javaee18"/>
+	<item value="80" key="ChooseUrlDialog.location.y"/>
+	<item value="1186" key="CommitDialog.size.x"/>
+	<item value="452" key="CommitDialog.size.y"/>
+	<section name="CommitWizard">
+		<item value="false" key="ShowCompare"/>
+		<item value="500" key="VWeight2"/>
+		<item value="500" key="VWeight1"/>
+	</section>
+	<section name="IgnoreResourcesDialog">
+		<item value="0" key="Action"/>
+	</section>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="https://GJPT89KM4LUV4E6:8443/svn/javaee18/"/>
+			<item value=""/>
+		</list>
+	</section>
+</section>

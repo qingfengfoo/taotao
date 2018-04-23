@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=taotao-manager-service/src\/main\/java&lt;com.taotao.service{ItemService.java[ItemService" modifiers="513" timestamp="1522012362267"/>
+<typeInfo handle="=taotao-manager-service/src\/main\/java&lt;com.taotao.service{ItemCatService.java[ItemCatService" modifiers="513" timestamp="1521634518875"/>
+<typeInfo handle="=taotao-manager-service/src\/main\/java&lt;com.taotao.service{PictureService.java[PictureService" modifiers="513" timestamp="1521892979295"/>
+<typeInfo handle="=taotao-manager-service/src\/main\/java&lt;com.taotao.service{ItemParamService.java[ItemParamService" modifiers="513" timestamp="1521999259685"/>
+<typeInfo handle="=taotao-manager-service/D:\/soft\/Java\/jdk1.7.0_15\/jre\/lib\/rt.jar&lt;java.awt.event(ItemListener.class[ItemListener" modifiers="1537" timestamp="1521476730334"/>
+<typeInfo handle="=taotao-rest/src\/main\/java&lt;com.taotao.rest.service{ItemCatService.java[ItemCatService" modifiers="513" timestamp="1522231669354"/>
+<typeInfo handle="=taotao-manager-service/src\/main\/java&lt;com.taotao.service{ContentCategoryService.java[ContentCategoryService" modifiers="513" timestamp="1522284434789"/>
+<typeInfo handle="=taotao-manager-service/src\/main\/java&lt;com.taotao.service{ContentService.java[ContentService" modifiers="513" timestamp="1522333905143"/>
+<typeInfo handle="=taotao-manager-service/D:\/doc\/taotao\/.m2\/repository\/org\/apache\/httpcomponents\/httpcore\/4.3.2\/httpcore-4.3.2.jar&lt;org.apache.http.entity(ContentProducer.class[ContentProducer" modifiers="1537" timestamp="1437285534175"/>
+<typeInfo handle="=taotao-rest/src\/main\/java&lt;com.taotao.rest.service{ContentService.java[ContentService" modifiers="513" timestamp="1522508868020"/>
+<typeInfo handle="=taotao-rest/D:\/doc\/taotao\/.m2\/repository\/org\/springframework\/spring-web\/4.1.3.RELEASE\/spring-web-4.1.3.RELEASE.jar&lt;org.springframework.web.accept(ContentNegotiationStrategy.class[ContentNegotiationStrategy" modifiers="1537" timestamp="1437286080595"/>
+<typeInfo handle="=taotao-portal/src\/main\/java&lt;com.taotao.portal.service{ContentService.java[ContentService" modifiers="513" timestamp="1522432768945"/>
+<typeInfo handle="=taotao-search/src\/main\/java&lt;com.taotao.search.service{ItemService.java[ItemService" modifiers="513" timestamp="1522721318017"/>
+<typeInfo handle="=taotao-search/D:\/soft\/Java\/jdk1.7.0_15\/jre\/lib\/rt.jar&lt;java.awt(ItemSelectable.class[ItemSelectable" modifiers="1537" timestamp="1521476730334"/>
+<typeInfo handle="=taotao-search/src\/main\/java&lt;com.taotao.search.dao{SearchDao.java[SearchDao" modifiers="513" timestamp="1522737620370"/>
+<typeInfo handle="=taotao-search/src\/main\/java&lt;com.taotao.search.service{SearchService.java[SearchService" modifiers="513" timestamp="1522740569338"/>
+<typeInfo handle="=taotao-portal/src\/main\/java&lt;com.taotao.portal.service{SearchService.java[SearchService" modifiers="513" timestamp="1522746358059"/>
+<typeInfo handle="=taotao-rest/src\/main\/java&lt;com.taotao.rest.service{ItemService.java[ItemService" modifiers="513" timestamp="1522939864261"/>
+<typeInfo handle="=taotao-portal/src\/main\/java&lt;com.taotao.portal.service{ItemService.java[ItemService" modifiers="513" timestamp="1522952943098"/>
+<typeInfo handle="=taotao-manager-pojo/src\/main\/java&lt;com.taotao.pojo{TbItem.java[TbItem" modifiers="1" timestamp="1521557276445"/>
+<typeInfo handle="=taotao-portal/src\/main\/java&lt;com.taotao.portal.service{StaticPageService.java[StaticPageService" modifiers="513" timestamp="1523015379697"/>
+<typeInfo handle="=taotao-portal/D:\/doc\/taotao\/.m2\/repository\/org\/springframework\/spring-jdbc\/4.1.3.RELEASE\/spring-jdbc-4.1.3.RELEASE.jar&lt;org.springframework.jdbc.core(StatementCallback.class[StatementCallback" modifiers="1537" timestamp="1437286104286"/>
+<typeInfo handle="=taotao-sso/src\/main\/java&lt;com.taotao.sso.service{RegisterService.java[RegisterService" modifiers="513" timestamp="1523152350342"/>
+<typeInfo handle="=taotao-sso/src\/main\/java&lt;com.taotao.sso.service{LoginService.java[LoginService" modifiers="513" timestamp="1523177847333"/>
+</typeInfoHistroy>

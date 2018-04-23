@@ -1,0 +1,13 @@
+package com.taotao.sso.controller;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * 用户注册接口
+ * @author Administrator
+ *
+ */
+@Controller
+public class RegisterController {
+
+}

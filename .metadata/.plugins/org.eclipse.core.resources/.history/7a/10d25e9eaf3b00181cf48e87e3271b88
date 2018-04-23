@@ -1,0 +1,21 @@
+package com.taotao.portal.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.portal.service.CartService;
+/**
+ * 购物车实现
+ * @author Administrator
+ *
+ */
+@Service
+public class CartServiceImpl implements CartService {
+
+	@Override
+	public TaotaoResult addCart(Long itemId, Integer num) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

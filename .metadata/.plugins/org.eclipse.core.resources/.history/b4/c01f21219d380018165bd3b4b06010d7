@@ -1,0 +1,40 @@
+package com.taotao.rest.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.taotao.mapper.TbItemMapper;
+import com.taotao.pojo.TbItem;
+import com.taotao.rest.component.JedisClient;
+import com.taotao.rest.service.ItemService;
+/**
+ * 商品管理Service
+ * @author Administrator
+ *
+ */
+@Service
+public class ItemServiceImpl implements ItemService {
+
+	@Autowired
+	private TbItemMapper itemMapper;
+	@Autowired
+	private JedisClient jedisClient;
+	
+	@Override
+	public TbItem getItemById(Long itemId) {
+		//查询缓存，如果有缓存，直接返回
+		
+		//根据商品id查询商品基本信息
+		TbItem item = itemMapper.selectByPrimaryKey(itemId);
+		
+		//向redis中添加缓存
+		//添加缓存原则是不能影响正常的业务逻辑
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return item;
+	}
+
+}

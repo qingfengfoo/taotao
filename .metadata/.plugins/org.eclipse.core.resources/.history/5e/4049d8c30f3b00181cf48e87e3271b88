@@ -1,0 +1,9 @@
+package com.taotao.sso.controller;
+/**
+ * 注册和登录页面
+ * @author Administrator
+ *
+ */
+public class PageController {
+
+}

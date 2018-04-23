@@ -1,0 +1,31 @@
+package com.taotao.sso.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.mapper.TbUserMapper;
+import com.taotao.pojo.TbUserExample;
+import com.taotao.pojo.TbUserExample.Criteria;
+import com.taotao.sso.service.RegisterService;
+/**
+ * 注册服务
+ * @author Administrator
+ *
+ */
+@Service
+public class RegisterServiceImpl implements RegisterService {
+
+	@Autowired
+	private TbUserMapper userMapper;
+	
+	@Override
+	public TaotaoResult checkData(String param, int type) {
+		//根据数据类型检查数据
+		TbUserExample example=new TbUserExample();
+		Criteria criteria = example.createCriteria();
+		userMapper.selectByExample(example);
+		return null;
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.taotao.sso.service;
+
+import com.taotao.common.pojo.TaotaoResult;
+
+public class RegisterServiceImpl implements RegisterService {
+
+	@Override
+	public TaotaoResult checkData(String param, int type) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

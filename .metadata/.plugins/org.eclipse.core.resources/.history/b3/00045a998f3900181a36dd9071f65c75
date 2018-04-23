@@ -1,0 +1,28 @@
+package com.taotao.portal.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.HttpClientUtil;
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.pojo.TbItem;
+import com.taotao.portal.service.ItemService;
+import com.taotao.portal.service.StaticPageService;
+/**
+ * 生成商品详情页面静态网页
+ * @author Administrator
+ *
+ */
+@Service
+public class StaticPageServiceImpl implements StaticPageService {
+
+	@Autowired
+	private ItemService itemService;
+
+	@Override
+	public TaotaoResult genItemHtml(Long itemId) {
+		TbItem tbItem = itemService.getItemById(itemId);
+		return null;
+	}
+}
